@@ -1,0 +1,6 @@
+.islandBG {
+  background: url(../../../assets/pokeIslandBG.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin: 0%;
+}

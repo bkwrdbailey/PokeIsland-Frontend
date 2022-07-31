@@ -1,0 +1,44 @@
+<div class="islandBG">
+  <app-navbar></app-navbar>
+  <div class="container">
+    <div class="row mt-3 pb-3">
+      <h1 class="d-flex justify-content-center" style="font-family: Pokemon;">Where To Explore?</h1>
+    </div>
+    <div class="container mt-3 rounded-3" style="background-color: #ABDB23; border: 3px solid #FAEA63;">
+      <div class="d-flex justify-content-center pt-3 pb-3">
+        <div class="row">
+          <button class="btn col-md-4">
+            <div class="card">
+              <img src="../../../assets/forest.jpg" height="170px" class="card-img-top">
+            </div>
+            <h4 style="font-family: Pokemon;">Explore Forest</h4>
+          </button>
+          <button class="btn col-md-4">
+            <div class="card">
+            <img src="../../../assets/ocean.jpg" height="170px" class="card-img-top">
+            </div>
+            <h4 style="font-family: Pokemon;">Explore Ocean</h4>
+          </button>
+          <button class="btn col-md-4">
+            <div class="card">
+            <img src="../../../assets/caves.jpg" height="170px" class="card-img-top">
+            </div>
+            <h4 style="font-family: Pokemon;">Explore Caves</h4>
+          </button>
+          <div class="col-12 d-flex justify-content-center mt-3 mb-3">
+            <div>
+              <!-- *ngIf for when someone hasn't clicked an exploration button card yet -->
+              <!-- <h1 style="font-family: Pokemon;">Start Exploring . . .</h1> -->
+              <!-- Display Pokemon encountered during exploration -->
+              <div>
+                <h4 style="font-family: Pokemon;">You encountered a wild Pikachu!</h4>
+                <button class="pokemonInfo"><img src="https://img.pokemondb.net/sprites/black-white/normal/pikachu.png" alt="Pikachu"></button><-- Click for Stats
+                <button class="btn battleBtn" (click)="openBattleBox()">Battle</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

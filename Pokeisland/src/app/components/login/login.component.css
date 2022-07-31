@@ -1,0 +1,17 @@
+.islandBG {
+  background: url(../../../assets/pokeIslandBG.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin: 0%;
+}
+
+.pokeLogo {
+  font-family: Pokemon;
+  font-size: 100px;
+  margin-bottom: 40px;
+}
+
+.loginBox {
+  border: 3px solid grey;
+  background-color: whitesmoke;
+}

@@ -1,0 +1,34 @@
+@keyframes usrAttack {
+  from { left: 0px; }
+  to { left: calc(100% - 10px); }
+}
+
+@keyframes enmyAttack {
+  from { right: 0px; }
+  to { right: calc(100% - 10px); }
+}
+
+.islandBG {
+  background: url(../../../assets/pokeIslandBG.jpg);
+  background-size: cover;
+  padding-bottom: 93px;
+  margin: 0%;
+}
+
+#pokemonMove {
+  background-color: #ABDB23;
+}
+
+#pokemonMove:hover {
+  background-color: #86aa22;
+}
+
+.usrAnimated {
+  animation: usrAttack 150ms 2 alternate;
+  position: relative;
+}
+
+.enmyAnimated {
+  animation: enmyAttack 150ms 2 alternate;
+  position: relative;
+}

@@ -1,0 +1,70 @@
+<div class="islandBG">
+  <div class="container" style="padding-top: 4em;">
+    <div class="border border-3 rounded-3 bg-warning d-flex justify-content-center">
+      <div class="row">
+        <h1 class="col-12 d-flex justify-content-center mt-3 mb-3" style="font-family: Pokemon;">- Poke Battle -</h1>
+        <!-- Pokemon Battling Section -->
+        <div class="row mb-3 mt-3">
+          <div class="col-6 d-flex justify-content-end">
+            <!-- Enemy Pokemon's Health -->
+            <h5 class="me-md-3">HP: 100/100</h5>
+            <progress value="100" max="100"></progress>
+          </div>
+          <div class="col-6 d-flex justify-content-center">
+            <a href="https://pokemondb.net/pokedex/cofagrigus"><img id="enemyPokemonPic" src="https://img.pokemondb.net/sprites/black-white/normal/cofagrigus.png" height="200px" alt="Cofagrigus"></a>
+          </div>
+          <div class="col-6 d-flex justify-content-center">
+            <a href="https://pokemondb.net/pokedex/cofagrigus"><img id="usrPokemonPic" src="https://img.pokemondb.net/sprites/black-white/back-normal/cofagrigus.png" height="200px" alt="Cofagrigus"></a>
+          </div>
+          <div class="col-6 d-flex justify-content-start">
+            <!-- User Pokemon's Health -->
+            <h5 class="me-md-3">HP: 70/100</h5>
+            <progress value="70" max="100"></progress>
+          </div>
+        </div>
+        <!-- User's Pokemon's Move list -->
+        <div class="row d-flex justify-content-center mb-4">
+          <button id="pokemonMove" class="card col-6 ms-3 ms-md-0" style="width: 190px;">
+            <div class="card-body row">
+              <h5 style="font-family: Pokemon">night-shade</h5>
+              <span>Type: ghost</span>
+              <span>PP: 50/50</span>
+            </div>
+          </button>
+          <button id="pokemonMove" class="pokemonMove card col-6 ms-3" style="width: 190px;">
+            <div class="card-body row">
+              <h5 style="font-family: Pokemon;">Toxic</h5>
+              <span>Type: poison</span>
+              <span>PP: 50/50</span>
+            </div>
+          </button>
+          <button id="pokemonMove" class="pokemonMove card col-6 ms-3 mt-3 mt-md-0" style="width: 190px;">
+            <div class="card-body row">
+              <h5 style="font-family: Pokemon;">shadow-ball</h5>
+              <span>Type: ghost</span>
+              <span>PP: 50/50</span>
+            </div>
+          </button>
+          <button type="button" (click)="userPokemonAtk()" id="pokemonMove" class="pokemonMove card col-6 ms-3 mt-3 mt-md-0" style="width: 190px;">
+            <div class="card-body row">
+              <h5 style="font-family: Pokemon;">astonish</h5>
+              <span>Type: ghost</span>
+              <span>PP: 50/50</span>
+            </div>
+          </button>
+        </div>
+        <!-- User's Pokemon Section -->
+        <div class="row d-flex justify-content-center mb-3">
+          <h3 class="d-flex justify-content-center" style="font-family: Pokemon;">Current Team</h3>
+          <!-- *ngFor loop each Pokemon user owns -->
+          <a style="width: 100px; opacity: 30%;" href="https://pokemondb.net/pokedex/pikachu"><img src="https://img.pokemondb.net/sprites/black-white/normal/pikachu-f.png" alt="Pikachu"></a>
+          <a class="ms-5" style="width: 100px;" href="https://pokemondb.net/pokedex/quagsire"><img src="https://img.pokemondb.net/sprites/black-white/normal/quagsire-f.png" alt="Quagsire"></a>
+          <a class="ms-5" style="width: 100px; opacity: 30%;" href="https://pokemondb.net/pokedex/camerupt"><img src="https://img.pokemondb.net/sprites/black-white/normal/camerupt.png" alt="Camerupt"></a>
+          <a class="ms-md-5 me-5" style="width: 100px;" href="https://pokemondb.net/pokedex/toxicroak"><img src="https://img.pokemondb.net/sprites/black-white/normal/toxicroak-f.png" alt="Toxicroak"></a>
+          <a class="me-5" style="width: 100px;" href="https://pokemondb.net/pokedex/timburr"><img src="https://img.pokemondb.net/sprites/black-white/normal/timburr.png" alt="Timburr"></a>
+          <a class="me-2" style="width: 100px;" href="https://pokemondb.net/pokedex/cofagrigus"><img src="https://img.pokemondb.net/sprites/black-white/normal/cofagrigus.png" alt="Cofagrigus"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
